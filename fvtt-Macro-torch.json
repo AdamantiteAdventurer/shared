@@ -1,0 +1,27 @@
+{
+  "name": "Torch",
+  "type": "script",
+  "author": "9LGz5Y2NIBQ5OxaJ",
+  "img": "https://i.imgur.com/Iq8H1xB.png",
+  "scope": "global",
+  "command": "if (token.data.light.dim === 0) {\n    await token.document.update({\n        light: {\n            alpha: 0.4,\n            angle: 0,\n            bright: 20,\n            coloration: 1,\n            dim: 40,\n            gradual: true,\n            luminosity: 0.5,\n            saturation: 0,\n            contrast: 0.25,\n            shadows: 0,\n            animation: {\n                speed: 1,\n                intensity: 2,\n                reverse: false,\n                type: \"torch\",\n            },\n            darkness: {\n                min: 0,\n                max: 1,\n            },\n            color: \"#ff9b00\",\n        },\n    });\n} else {\n    await token.document.update({\n        light: {\n            alpha: 0.5,\n            angle: 0,\n            bright: 0,\n            color: \"#000000\",\n            coloration: 1,\n            dim: 0,\n            gradual: true,\n            luminosity: 0.5,\n            saturation: 0,\n            contrast: 0,\n            shadows: 0,\n            animation: {\n                speed: 5,\n                intensity: 5,\n                reverse: false,\n            },\n            darkness: {\n                min: 0,\n                max: 1,\n            },\n        },\n    });\n}",
+  "flags": {
+    "scene-packer": {
+      "sourceId": "Macro.IF3f1UEZBSGM6TYU"
+    },
+    "exportSource": {
+      "world": "blood-lords-thursday",
+      "system": "pf2e",
+      "coreVersion": "10.287",
+      "systemVersion": "4.2.6"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "4.2.3",
+    "coreVersion": "10.286",
+    "createdTime": null,
+    "modifiedTime": 1665100452824,
+    "lastModifiedBy": "BnWwKEH9nkFqtxSs"
+  }
+}
